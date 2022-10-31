@@ -9,7 +9,7 @@ body {
   background-color: #f9fafb;
   min-height: 100vh;
   font-family: "Ubuntu", sans-serif;
-  padding-top: 10vh;
+  padding-top: 5vh;
 }
 
 .form-container {
@@ -54,6 +54,23 @@ body {
 
 .form-control small {
   color: #e74c3c;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success small {
+  visibility: hidden;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
 }
 
 .form button {
@@ -66,4 +83,10 @@ body {
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.form button.red-btn {
+  background-color: #e74c3c;
+  outline: none;
 }
